@@ -13,17 +13,18 @@
 }
 
 .header-wrapper {
+    border-bottom: 1px #fff solid;
     display: flex;
     justify-content: space-around;
     padding: 0.5rem 0;
-    background-color: lightblue;
+    background-color: #111;
     z-index: 10;
 }
 
 .header-logo {
     width: 100px;
     height: 50px;
-    background-color: navy;
+    background-color: white;
 }
 
 .menu-links {
@@ -35,23 +36,25 @@
     width: 100%;
     height: 100%;
     top: -100%;
+    // top: 0;
     transition: 0.33s;
     text-align: center;
-    background-color: #111111;
-}
-
-.menu-links a {
-    display: block;
-    color: lightgray;
-    text-decoration: none;
+    background-color: #111;
+    // opacity: 0.9;
 }
 
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #fff;
     margin: 3px 0;
     transition: 0.4s;
+}
+
+.menu-label:hover {
+    .bar1, .bar2, .bar3 {
+        background-color: gray;
+    }
 }
 
 .change .bar1 {
@@ -64,4 +67,17 @@
 
 .change .bar3 {
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: gray;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
+    &:hover {
+        color: white;
+    }
 }
