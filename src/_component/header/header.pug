@@ -1,0 +1,19 @@
+header
+    .header-wrapper
+        .header-logo
+            span.header-logo-span
+        .header-menu
+            input.menu-input(type="checkbox" id="menu")
+            label.menu-label(for="menu" onclick="showMenu()")
+                .bar1
+                .bar2
+                .bar3
+    .menu-links
+        .links
+            a(href="#") Home
+            a(href="/bauturi") Bauturi
+            a(href="/mancaruri") Mancaruri
+
+
+script
+    include header.js

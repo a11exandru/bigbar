@@ -1,4 +1,2 @@
-h1 {
-    color: lightskyblue;
-    text-transform: uppercase;
-}
+@import '_component/layout/layout';
+@import '_component/header/header';

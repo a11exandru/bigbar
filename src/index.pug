@@ -1,8 +1,10 @@
-doctype html
-html
-    head
-        title BigBar in cartier
-        link(rel="stylesheet", href="style.css")
+extends _component/layout/layout
 
-    body
-        h1 alex e cel mai tare
+block config
+    -
+        var title="BigBar in cartier"
+            description="This is a big bar in our city and i decided to make a site.";
+            author="Alexandru Puiu";
+
+block content
+    include _component/header/header
