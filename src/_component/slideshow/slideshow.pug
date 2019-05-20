@@ -1,0 +1,6 @@
+.container-slideshow
+    each slide in data.slideshow
+        .slides.fade
+            .numberText=slide.numberText
+            img(src=slide.image style="width:100%")
+            .text=slide.text
