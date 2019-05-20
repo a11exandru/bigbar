@@ -3,5 +3,10 @@
         "numberText": "1/3",
         "image": "asset/image/slideshow/coffee.jpg",
         "text": "Cea mai buna cafea din oras, nu mai beau la voi."
+    },
+    {
+        "numberText": "1/3",
+        "image": "asset/image/slideshow/pizza.jpg",
+        "text": "Cea mai buna cafea din oras, nu mai beau la voi."
     }
 ]
