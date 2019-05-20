@@ -2,5 +2,8 @@
     each slide in data.slideshow
         .slides.fade
             .numberText=slide.numberText
-            img(src=slide.image style="width:100%")
+            img(src=slide.image, style="width:100%")
             .text=slide.text
+
+    a.prev(onclick="plusSlide(-1)") &#10094;
+    a.next(onclick="plusSlide(1)") &#10095;
