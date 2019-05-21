@@ -1,25 +1,43 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+// let slideIndex = 1;
+// showSlides(slideIndex);
 
 // prev/next controls
 
-const plusSlides = (n) => {
-    showSlides(plusSlides += n);
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-const currentSlide = (n) => {
+function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-const showSlides = (n) => {
+// function showSlides(n) {
+//     var i;
+//     var slides = document.getElementsByClassName('slides');
+//     if (n > slides.length) {slideIndex = 1};
+//     if (n < 1) {slideIndex = slides.length};
+
+//     for(i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";
+//     }
+
+//     slides[slideIndex - 1].style.display = "block";
+// }
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
     var i;
     var slides = document.getElementsByClassName('slides');
-    if (n > slides.lenght) {slideIndex = 1};
-    if (n < 1) {slides = slideIndex.lenght};
-
-    for(i = 0; i < slides.length; i++) {
+    for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
+    slideIndex++;
 
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
     slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 5000)
 }

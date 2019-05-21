@@ -9,13 +9,15 @@
 }
 
 .prev, .next {
+    // display none pt ca slideshow-ul e automat.
+    display: none;
     cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     color: white;
     padding: 0.9rem 1.2rem;
-    transition: 0.29s ease;
+    transition: 0.5s ease;
     font-size: 1.3rem;
     
     &:hover {
