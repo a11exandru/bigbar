@@ -41,3 +41,7 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 5000)
 }
+
+for( var i = 1; i <= 100; i++) {
+    document.write("ia sa vedem!<br>");
+}

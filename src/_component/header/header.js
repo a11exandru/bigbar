@@ -19,3 +19,13 @@ let closeMenu = () => {
     label.classList.remove('change');
     input.checked = false;
 }
+
+window.addEventListener("scroll", () => {
+    let header = document.querySelector("header");
+
+    if (scrollY > 500) {
+        header.style = "background-color: #111";
+    } else {
+        header.style = "background-color: none";
+    }
+})
