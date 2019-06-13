@@ -3,7 +3,8 @@
         .slides.fade
             .numberText=slide.numberText
             img(src=slide.image, style="width:100%")
-            .text=slide.text
+            .text
+                p=slide.text
 
     a.prev(onclick="plusSlides(-1)") &#10094;
     a.next(onclick="plusSlides(1)") &#10095;

@@ -54,9 +54,19 @@
     font-size: 1.3rem;
     position: absolute;
     bottom: 18px;
+    overflow-y: hidden;
     color: #f2f2f2;
     width: 100%;
     text-align: center;
+}
+
+.text p {
+    display: inline-block;
+    background-color: gray;
+    margin: 0 17px;
+    padding: 4px;
+    opacity: 0.9;
+    border-radius: 0.2rem;
 }
 
 .fade {

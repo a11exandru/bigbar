@@ -13,12 +13,10 @@
 }
 
 .header-wrapper {
-    background-color: #111;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    // border-bottom: 1px #fff solid;
     display: flex;
     justify-content: space-around;
     padding: 0.4rem 0;
@@ -118,6 +116,10 @@
         a {
             font-size: 1.3rem;
             color: white;
+
+            &:hover {
+                color: gray;
+            }
         }
     }
 }

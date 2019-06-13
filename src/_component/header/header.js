@@ -22,10 +22,13 @@ let closeMenu = () => {
 
 window.addEventListener("scroll", () => {
     let header = document.querySelector("header");
+    let headerWrapper = document.querySelector(".header-wrapper");
 
-    if (scrollY > 500) {
+    if (scrollY > 400) {
         header.style = "background-color: #111";
+        headerWrapper.style = "background-color: #111";
     } else {
         header.style = "background-color: none";
+        headerWrapper.style = "background-color: none";
     }
 })
