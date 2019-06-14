@@ -18,7 +18,8 @@
     right: 0;
     left: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 2.4rem;
     padding: 0.4rem 0;
     z-index: 10;
 }
@@ -76,6 +77,29 @@
     }
 }
 
+.location {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 10;
+    margin-right: 6.5rem;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.9rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    span {
+        position: relative;
+        top: 6px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .header-wrapper,
     .menu-links {
@@ -94,7 +118,7 @@
         right: 0;
         left: 0;
         z-index: 1;
-        display: flex;
+        // display: flex;
         justify-content: space-between;
 
         div {
@@ -109,6 +133,8 @@
     }
 
     .links {
+        margin-left: 14rem;
+        margin-top: 1.2rem;
         position: relative;
         display: flex;
         top: 10px;
@@ -120,6 +146,16 @@
             &:hover {
                 color: gray;
             }
+        }
+    }
+
+    .location {
+        top: 20px;
+        margin-right: 20px;
+
+        span {
+            float: left;
+            top: -2px;
         }
     }
 }
