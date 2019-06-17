@@ -19,8 +19,7 @@
     left: 0;
     display: flex;
     justify-content: space-between;
-    margin: 0 2.4rem;
-    padding: 0.4rem 0;
+    padding: 0.4rem 2.4rem;
     z-index: 10;
 }
 
@@ -112,13 +111,12 @@
     }
 
     header {
-        height: 57px;
+        height: 60px;
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
         z-index: 1;
-        // display: flex;
         justify-content: space-between;
 
         div {
@@ -134,7 +132,7 @@
 
     .links {
         margin-left: 14rem;
-        margin-top: 1.2rem;
+        margin-top: 0.5rem;
         position: relative;
         display: flex;
         top: 10px;
