@@ -103,7 +103,7 @@
     "imagemin-jpegoptim": "5.0.0",
     "imagemin-pngquant": "5.0.0",
     "imagemin-svgo": "5.2.0",
-    "js-yaml": "3.12.2",
+    "js-yaml": "3.13.1",
     "jstransformer-markdown-it": "2.1.0",
     "merge-stream": "1.0.1",
     "minimist": "1.2.0"
